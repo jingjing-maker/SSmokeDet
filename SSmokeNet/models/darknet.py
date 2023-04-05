@@ -9,7 +9,7 @@ from .network_blocks import BaseConv, ResLayer, MyResSPP
 
 # depth2blocks = {21: [1, 2, 2, 1], 53: [2, 8, 8, 4]}
 
-class Darknet_S(nn.Module):
+class SNet(nn.Module):
 
     depth2blocks = {21: [1, 1, 1, 1], 53: [1, 3, 3, 2]}
    
@@ -37,7 +37,7 @@ class Darknet_S(nn.Module):
         )
         in_channels = stem_out_channels * 2  
 
-        num_blocks = Darknet_S.depth2blocks[depth]
+        num_blocks = SNet.depth2blocks[depth]
 
         self.dark2 = nn.Sequential(*self.make_group_layer(in_channels, num_blocks[0], stride=2))
         in_channels *= 2 
