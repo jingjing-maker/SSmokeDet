@@ -5,7 +5,7 @@
 import torch
 import torch.nn as nn
 
-from .darknet import Darknet_S
+from .darknet import SNet
 from .network_blocks import BaseConv, CSPLayer, DWConv
 
 
@@ -21,7 +21,7 @@ class PAFPN(nn.Module):
         act="silu",
     ):
         super().__init__()
-        self.backbone = Darknet_S(depth=53,stem_out_channels=int(32*width)) 
+        self.backbone = SNet(depth=53,stem_out_channels=int(32*width)) 
         self.in_features = in_features
         self.in_channels = in_channels
         Conv = DWConv if depthwise else BaseConv
