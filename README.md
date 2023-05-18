@@ -2,8 +2,8 @@
 <!-- <img src="assets/git_fig.png" width="1000" > -->
 
 ## Introduction
-SSmokeNet is a lightweight network for smoke detection, with a simpler design but significant performance!
-<!-- SSmokeNet is a lightweight network for small smoke detection, with a simpler design but significant performance! -->
+SSmokeDet is a lightweight network for smoke detection, with a simpler design but significant performance!
+<!-- SSmokeDet is a lightweight network for small smoke detection, with a simpler design but significant performance! -->
 <!-- It is specifically designed for small smoke detection, such as early and distant smoke, and it can be applied in various environments. -->
 <!-- This repo is an implementation of PyTorch version SSmokeNet. -->
 
