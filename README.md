@@ -7,7 +7,9 @@ SSmokeDet is a lightweight network for smoke detection, with a simpler design bu
 <!-- It is specifically designed for small smoke detection, such as early and distant smoke, and it can be applied in various environments. -->
 <!-- This repo is an implementation of PyTorch version SSmokeNet. -->
 
-In addition, we provide a smoke dataset composed of real smoke images and annotate it manually, termed the annotated real smoke of Xi’an Jiaotong University ([XJTU-RS](https://pan.baidu.com/s/1XroD3qLwRH5tipsyDDzhSg)), and code is <b>CIFR<b>. 
+In addition, we provide a smoke dataset composed of real smoke images and annotate it manually, termed the [XJTU-RS](https://pan.baidu.com/s/1XroD3qLwRH5tipsyDDzhSg), and code is <b>CIFR<b>. 
+<!--     annotated real smoke of Xi’an Jiaotong University -->
+    
 <!-- These real images are from two benchmark datasets: [CVPR](https://cvpr.kmu.ac.kr/) and [USTC](http://smoke.ustcdu.cn/datasets.html).  -->
 <!-- Our dataset is available. -->
 
