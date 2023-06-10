@@ -45,11 +45,11 @@ python tools/demo.py image -n SSmokeDet -c /path/to/your/ssmokedet.pth --path ./
 ```
 or
 ```shell
-python tools/demo.py image -f exps/default/ssmokedet.py.py -c /path/to/your/ssmokedet.pth --path ./test_img/ --conf 0.25 --nms 0.45 --tsize 640 --save_result --device [cpu/gpu]
+python tools/demo.py image -f exps/default/ssmokenet.py -c /path/to/your/ssmokedet.pth --path ./test_img/ --conf 0.25 --nms 0.45 --tsize 640 --save_result --device [cpu/gpu]
 ```
 eg:
 
-python tools/demo.py image -f exps/default/ssmokedet.py -c weight/final.pth --path ./test_img/ --conf 0.25 --nms 0.45 --tsize 640 --save_result --device [gpu]
+python tools/demo.py image -f exps/default/ssmokenet.py -c weight/final.pth --path ./test_img/ --conf 0.25 --nms 0.45 --tsize 640 --save_result --device [gpu]
 
 
 Demo for video: 
@@ -82,7 +82,7 @@ python tools/train.py -n SSmokeDet -d 1 -b 64 --fp16 -o [--cache]
 
 When using -f, the above commands are equivalent to:
 ```shell
-python tools/train.py -f exps/default/ssmokedet.py -d 8 -b 64 --fp16 -o [--cache]
+python tools/train.py -f exps/default/ssmokenet.py -d 8 -b 64 --fp16 -o [--cache]
 ```
 
 **Multi Machine Training**
